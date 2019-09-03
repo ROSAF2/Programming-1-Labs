@@ -12,7 +12,7 @@ namespace Lab8Task3
         static void Main()
         {
             Random rand = new Random();
-            string[] answerArray = new string[7] {"Why What?","I don't know. Why?","Really, I don't know.","Please. I don't know","Please stop.","Please! I am begging you to stop.","Because..."};
+            string[] answerArray = {"Why What?","I don't know. Why?","Really, I don't know.","Please. I don't know","Please stop.","Please! I am begging you to stop.","Because..."};
             int i;
 
             Console.WriteLine("\t\tWelcome to the \"3-year-old\" simulator! Remastered Edition!\n");
