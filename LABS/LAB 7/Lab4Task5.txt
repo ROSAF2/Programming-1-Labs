@@ -1,0 +1,25 @@
+Console.OutputEncoding = Encoding.UTF8;
+
+            const double AUD = 0.8085, USD = 0.8272, GBP = 0.5457, JPY = 76.23, EUR = 0.692;
+            double AUDF, USDF, GBPF, JPYF, EURF;
+            char e = '€';
+
+            Console.WriteLine("Please enter your amount of NZD you want to exchange: ");
+            int NZD = Convert.ToInt32(Console.ReadLine());
+
+            AUDF = AUD * NZD;
+            USDF = USD * NZD;
+            GBPF = GBP * NZD;
+            JPYF = JPY * NZD;
+            EURF = EUR * NZD;
+
+            Console.WriteLine("\nThat is:");
+
+
+            Console.WriteLine($"{AUDF:C2} AUD");
+            Console.WriteLine($"{USDF:C2} USD");
+            Console.WriteLine($"£{GBPF:F2} GBP");
+            Console.WriteLine($"¥{JPYF:F2} JPY");
+            Console.WriteLine($"{e}{EURF} EUR");
+
+            Console.ReadLine();
