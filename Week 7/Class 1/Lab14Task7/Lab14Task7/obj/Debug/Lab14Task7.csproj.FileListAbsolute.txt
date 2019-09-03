@@ -1,0 +1,7 @@
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.exe.config
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.exe
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.pdb
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.csprojAssemblyReference.cache
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.csproj.CoreCompileInputs.cache
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.exe
+H:\IN510 Programming 1\Week 7\Class 1\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.pdb

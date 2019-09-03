@@ -1,0 +1,7 @@
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\obj\Debug\Lab6Task2.csprojAssemblyReference.cache
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\obj\Debug\Lab6Task2.csproj.CoreCompileInputs.cache
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\bin\Debug\Lab6Task2.exe.config
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\bin\Debug\Lab6Task2.exe
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\bin\Debug\Lab6Task2.pdb
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\obj\Debug\Lab6Task2.exe
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task2\Lab6Task2\obj\Debug\Lab6Task2.pdb

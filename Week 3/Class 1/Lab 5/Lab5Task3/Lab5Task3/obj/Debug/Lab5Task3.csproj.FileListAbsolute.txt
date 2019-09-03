@@ -1,0 +1,7 @@
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\obj\Debug\Lab5Task3.csprojAssemblyReference.cache
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\obj\Debug\Lab5Task3.csproj.CoreCompileInputs.cache
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\bin\Debug\Lab5Task3.exe.config
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\bin\Debug\Lab5Task3.exe
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\bin\Debug\Lab5Task3.pdb
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\obj\Debug\Lab5Task3.exe
+c:\users\rosaf2\source\repos\Lab5Task3\Lab5Task3\obj\Debug\Lab5Task3.pdb

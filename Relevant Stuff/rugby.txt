@@ -1,0 +1,64 @@
+static void Main(string[] args)
+        {
+            Random rand = new Random();
+            int team1, team2;
+            team1 = rand.Next(8);
+           
+            Console.WriteLine("Team 1 has the ball");
+            Thread.Sleep(2000);
+            switch (team1)
+            {
+                case 0:
+                case 1:
+                case 2:
+                case 4:
+                case 6:
+                    Console.WriteLine("Tackled lost the ball");
+                    team1 = 0;
+                    break;
+
+                case 3:
+                    Console.WriteLine("Kicked a goal");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Scored a try");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Scored a try and converted");
+                    break;                              
+            } //end of the switch
+
+            team2 = rand.Next(8);
+            Console.WriteLine();
+            Console.WriteLine("Team 2 has the ball");
+            Thread.Sleep(2000);
+            switch (team2)
+            {
+                case 0:
+                case 1:
+                case 2:
+                case 4:
+                case 6:
+                    Console.WriteLine("Tackled lost the ball");
+                    team2 = 0;
+                    break;
+
+                case 3:
+                    Console.WriteLine("Kicked a goal");
+                    break;
+
+                case 5:
+                    Console.WriteLine("Scored a try");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Scored a try and converted");
+                    break;
+            } //end of the switch
+
+            Console.WriteLine();
+            Console.WriteLine("At the end of play 1 the scores are {0} : {1}",team1,team2);
+            Console.ReadLine();
+        }

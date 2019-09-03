@@ -1,0 +1,14 @@
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.exe.config
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.exe
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.pdb
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.csprojAssemblyReference.cache
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.exe
+C:\Users\valse\Downloads\Animacion\Program\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.pdb
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.exe.config
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.exe
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\bin\Debug\Happy Rocket.pdb
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.csprojAssemblyReference.cache
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.exe
+H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.pdb

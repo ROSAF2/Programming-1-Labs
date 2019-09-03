@@ -1,0 +1,6 @@
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\bin\Debug\Lab5Task2.exe.config
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\bin\Debug\Lab5Task2.exe
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\bin\Debug\Lab5Task2.pdb
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\obj\Debug\Lab5Task2.csproj.CoreCompileInputs.cache
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\obj\Debug\Lab5Task2.exe
+C:\Users\valse\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Lab5Task2\Lab5Task2\obj\Debug\Lab5Task2.pdb

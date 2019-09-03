@@ -1,0 +1,6 @@
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\bin\Debug\Lab6Task5.exe.config
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\bin\Debug\Lab6Task5.exe
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\bin\Debug\Lab6Task5.pdb
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\obj\Debug\Lab6Task5.csproj.CoreCompileInputs.cache
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\obj\Debug\Lab6Task5.exe
+H:\IN510 Programming 1\Week 3\Class 2\Lab6Task5\Lab6Task5\obj\Debug\Lab6Task5.pdb
