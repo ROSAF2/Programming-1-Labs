@@ -1,7 +1,0 @@
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\bin\Debug\Lab9Task2.exe.config
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\bin\Debug\Lab9Task2.exe
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\bin\Debug\Lab9Task2.pdb
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\obj\Debug\Lab9Task2.csprojAssemblyReference.cache
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\obj\Debug\Lab9Task2.csproj.CoreCompileInputs.cache
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\obj\Debug\Lab9Task2.exe
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB 9\Lab9Task2\Lab9Task2\obj\Debug\Lab9Task2.pdb

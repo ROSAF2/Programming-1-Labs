@@ -5,3 +5,10 @@ H:\IN510 Programming 1\Week4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Tas
 H:\IN510 Programming 1\Week4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.csproj.CoreCompileInputs.cache
 H:\IN510 Programming 1\Week4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.exe
 H:\IN510 Programming 1\Week4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.pdb
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\bin\Debug\Lab7Task2.exe.config
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\bin\Debug\Lab7Task2.exe
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\bin\Debug\Lab7Task2.pdb
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.csprojAssemblyReference.cache
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.csproj.CoreCompileInputs.cache
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.exe
+H:\Programming-1-Labs\Week 4\Class 1\Lab 7\Lab7Task2\Lab7Task2\obj\Debug\Lab7Task2.pdb

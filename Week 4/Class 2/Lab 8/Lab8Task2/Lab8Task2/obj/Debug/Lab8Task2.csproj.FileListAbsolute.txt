@@ -1,0 +1,14 @@
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.exe.config
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.pdb
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.csprojAssemblyReference.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.csproj.CoreCompileInputs.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.pdb
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.exe.config
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.exe
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\bin\Debug\Lab8Task2.pdb
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.csprojAssemblyReference.cache
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.csproj.CoreCompileInputs.cache
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.exe
+H:\Programming-1-Labs\LABS HOME\LAB 8\Lab8Task2\Lab8Task2\obj\Debug\Lab8Task2.pdb

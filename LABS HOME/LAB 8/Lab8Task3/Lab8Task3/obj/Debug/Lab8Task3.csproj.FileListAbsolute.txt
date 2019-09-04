@@ -1,7 +1,0 @@
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\bin\Debug\Lab8Task3.exe.config
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\bin\Debug\Lab8Task3.exe
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\bin\Debug\Lab8Task3.pdb
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\obj\Debug\Lab8Task3.csprojAssemblyReference.cache
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\obj\Debug\Lab8Task3.csproj.CoreCompileInputs.cache
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\obj\Debug\Lab8Task3.exe
-C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\LABS\LAB8\Lab8Task3\Lab8Task3\obj\Debug\Lab8Task3.pdb
