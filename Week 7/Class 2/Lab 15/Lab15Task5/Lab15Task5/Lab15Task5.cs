@@ -10,8 +10,7 @@ namespace Lab15Task5
     {
         static void Main()
         {
-           // char accumulation;
-
+           
             Console.Write("Please enter a starting letter: ");
             char start = Convert.ToChar(Console.ReadLine());
 
@@ -21,16 +20,17 @@ namespace Lab15Task5
             if (start > end) Console.WriteLine("\nPlease make sure they are in order");
             else Console.WriteLine($"\nfor start value {start} and stop value {end}");
 
-            for (char i = start; i <= end; i++)
+            for (char j = start; j <= end; j++)
             {
-               // accumulation = start + i;
-                Console.WriteLine(i);
-
+                for (char i = start; i <= j; i++)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine();
             }
 
-
             Console.ReadLine();
-                
+
         }
     }
 }

@@ -12,3 +12,10 @@ C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Progra
 C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.csproj.CoreCompileInputs.cache
 C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.exe
 C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.pdb
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.exe.config
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.exe
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\bin\Debug\Lab14Task7.pdb
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.csprojAssemblyReference.cache
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.csproj.CoreCompileInputs.cache
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.exe
+H:\Programming-1-Labs\Week 7\Class 1\Lab 14\Lab14Task7\Lab14Task7\obj\Debug\Lab14Task7.pdb

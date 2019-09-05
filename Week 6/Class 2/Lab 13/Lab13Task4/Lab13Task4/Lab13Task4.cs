@@ -17,45 +17,27 @@ namespace Lab13Task4
 
             Console.WriteLine(name);
             Console.WriteLine(name.Length);
-            Console.WriteLine(name.Contains("bra"));
+            Console.WriteLine(name.Contains("bra"));  BOOLEAN
             Console.WriteLine(name.ElementAt(0));
-            Console.WriteLine(name.Equals("Zebra"));
+            Console.WriteLine(name.Equals("Zebra"));  BOOLEAN
             Console.WriteLine(name.IndexOf('a'));
             Console.WriteLine(name.ToLower());
             Console.WriteLine(name.ToUpper());
-
-            foreach (char i in name)
-            {
-                Console.WriteLine(i);
-
-            }
             */
 
-            string[] songArray = new string[7];
-            int U, L, O;
+            int uCounter =0,  lCounter=0;
 
-            Console.WriteLine("Please input a line of text\n");
+            Console.Write("Please input a line of text: ");
+            string line = Console.ReadLine();
 
-            if ()
+            string upperLine = line.ToUpper();
 
-            for (int i = 0; i < 7; i++)
+            for ()
             {
-                Console.Write($"Title {i + 1}: ");
-                songArray[i] = Console.ReadLine();
-
-                if (songArray[i] == "")
-                    break;
-                Console.WriteLine();
+                if (line[i] = upperLine[i]) uCounter++;
+                else
             }
-
-
-
             
-            Console.ReadLine();
-
-
-
-
 
 
             Console.ReadLine();
