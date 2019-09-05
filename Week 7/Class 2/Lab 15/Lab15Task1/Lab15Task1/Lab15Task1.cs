@@ -11,30 +11,15 @@ namespace Lab15Task1
         static void Main()
         {
 
-            Random rand = new Random();
-            int va = rand.Next(1, 41);
-            int[] arr = new int[6];
-            int[] arr2 = new int[];
+            Console.WriteLine("\t       Recantgle of Stars!");
 
-            Console.WriteLine("\t\t\tLotto Problem\n");
-
-
-
-            for (int i = 0; i < 6; i++)
+            for (int j = 0; j < 10; j++)
             {
-                arr[i] = va;
-                while (va == arr[i])
+                for (int i = 0; i < 50; i++)
                 {
-                    va = rand.Next(1, 41);
+                    Console.Write("*");
                 }
-                arr[i] = va;
-            }
-
-
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                Console.WriteLine($"{i + 1}.- {arr[i]}");
+                Console.WriteLine();
             }
 
             Console.ReadLine();
