@@ -11,12 +11,12 @@ namespace Lab15Taks6_V2
         static void Main()
         {
             Random rand = new Random();
-            int[] arr = new int[6];
+            int[] arr = new int[15];
             int va = rand.Next(1, 41);
 
             Console.WriteLine("\t\t\tLotto Problem\n");
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 while (arr.Contains(va))
                 {

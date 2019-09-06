@@ -13,7 +13,15 @@ namespace Happy_Rocket
         {
             int x=50;
 
-            Console.Read();
+            Console.WriteLine("\n\n\n\n\n\n\n\n");
+            Console.WriteLine("\t\t\t\tFor a better view of the animation,");
+            Console.WriteLine("\t\t\t\t* Adjust the size of the console to full screen.");
+            Console.WriteLine("\t\t\t\t* Open the properties of the console and set the font size to 12,");
+            Console.WriteLine("\t\t\t\t* Set the Screen Text to Black and the Screen Background to White.");
+            Console.WriteLine("\t\t\t\t* Enjoy!");
+            Console.WriteLine("\n\n\n\n\n\n\n\n");
+            Console.Write("Press enter to start");
+            Console.ReadLine();
             Console.Clear();
 
             //0048

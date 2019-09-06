@@ -12,3 +12,10 @@ H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocke
 H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
 H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.exe
 H:\IN510 Programming 1\Animation\Happy Rocket\Happy Rocket\obj\Debug\Happy Rocket.pdb
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.exe.config
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.exe
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.pdb
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.csprojAssemblyReference.cache
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.exe
+H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.pdb
