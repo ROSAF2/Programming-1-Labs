@@ -20,8 +20,8 @@ namespace Lab9Task2
                 Console.Write("\nGuess:");
                 guess = Convert.ToInt32(Console.ReadLine());
                 if (guess > 10) Console.WriteLine("\nPlease only enter numbers from 1 to 10");
-
-             }while (number != guess) ;
+                if (guess < 1) Console.WriteLine("\nPlease only enter numbers from 1 to 10");
+            } while (number != guess) ;
 
             Console.WriteLine("\nYour guess is correct!");
 
