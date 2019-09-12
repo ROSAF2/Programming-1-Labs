@@ -18,7 +18,7 @@ namespace FranciscoRosas
               *   structures.
              */
             Random rand = new Random();
-            int age, randomNumber, cardValue=0, cardTotal=0;
+            int age, randomNumber, cardValue, cardTotal=0;
             string answer;
 
             Console.Write("\t\tWelcome to this card game, please provide your age: ");
@@ -33,6 +33,7 @@ namespace FranciscoRosas
                     for (int i = 0; i < 5; i++)
                     {
                         randomNumber = rand.Next(1, 14);
+                        cardValue = 0; //Resets Card Value
 
                         Console.WriteLine("Round {0}: Card Number {1}", i + 1, randomNumber); //Showing Card Number
 
@@ -75,7 +76,7 @@ namespace FranciscoRosas
                         cardTotal = cardTotal + cardValue;  //Accumulate Total Card Value
                     }
 
-                    Console.WriteLine($"\n\t\t\tYour grant Total is: {cardTotal:C2}");
+                    Console.WriteLine($"\n\t\t\tYour grant Total is: ${cardTotal:F2}");
 
                     Console.Write("\n\t\t\tDo you want to play again?: ");
                     answer = Console.ReadLine();
