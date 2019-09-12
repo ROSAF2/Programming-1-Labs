@@ -41,41 +41,19 @@ namespace FranciscoRosas
                             case 1:
                                 cardValue = 20;
                                 break;
-                            case 2:
-                                cardValue = cardValue - 2;
-                                break;
-                            case 3:
-                                cardValue = cardValue - 3;
-                                break;
-                            case 4:
-                                cardValue = cardValue - 4;
-                                break;
-                            case 5:
-                                cardValue = cardValue - 5;
-                                break;
-                            case 6:
-                                cardValue = cardValue - 6;
-                                break;
-                            case 7:
-                                cardValue = cardValue - 7;
-                                break;
-                            case 8:
-                                cardValue = cardValue - 8;
-                                break;
-                            case 9:
-                                cardValue = cardValue - 9;
-                                break;
-                            case 10:
-                                cardValue = cardValue-10;
+                            case 11:
+                            case 12:
+                            case 13:
+                                cardValue = 10;
                                 break;
                             default:
-                                cardValue = 10;
+                                cardValue = -randomNumber;
                                 break;
                         }
                         cardTotal = cardTotal + cardValue;  //Accumulate Total Card Value
                     }
 
-                    Console.WriteLine($"\n\t\t\tYour grant Total is: {cardTotal:C2}");
+                    Console.WriteLine($"\n\t\t\tYour grant Total is: ${cardTotal:F2}");
 
                     Console.Write("\n\t\t\tDo you want to play again?: ");
                     answer = Console.ReadLine();
