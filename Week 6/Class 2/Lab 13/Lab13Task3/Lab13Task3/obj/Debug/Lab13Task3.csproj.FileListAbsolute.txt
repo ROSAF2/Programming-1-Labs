@@ -5,3 +5,10 @@ H:\IN510 Programming 1\Week 6\Class 2\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3
 H:\IN510 Programming 1\Week 6\Class 2\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.csproj.CoreCompileInputs.cache
 H:\IN510 Programming 1\Week 6\Class 2\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.exe
 H:\IN510 Programming 1\Week 6\Class 2\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.pdb
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\bin\Debug\Lab13Task3.exe.config
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\bin\Debug\Lab13Task3.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\bin\Debug\Lab13Task3.pdb
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.csprojAssemblyReference.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.csproj.CoreCompileInputs.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Week 6\Class 2\Lab 13\Lab13Task3\Lab13Task3\obj\Debug\Lab13Task3.pdb

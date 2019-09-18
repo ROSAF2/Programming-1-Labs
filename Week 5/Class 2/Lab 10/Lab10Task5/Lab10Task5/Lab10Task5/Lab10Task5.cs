@@ -24,7 +24,7 @@ namespace Lab10Task5
 
             for (i=1;i<6001;i++)
             {
-                dice = number.Next(0,7);
+                dice = number.Next(1,7);
 
                 switch (dice)
                 {
