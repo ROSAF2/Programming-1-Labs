@@ -25,8 +25,8 @@ namespace ConsoleApp6
             //Questions
             question[0] = "What is your name?"; // close-ended question
             question[1] = "Hi , nice to meet you"; // Response
-            question[2] = "Ah, yes..., I remember..."; // Response
-            question[3] = "I thought your name was "; // Response
+            question[2] = "Ah, yes..., I remember..."; // Consistency response
+            question[3] = "I thought your name was "; // Inconsistency response
             question[4] = "How are you feeling today?";//close-ended question
             question[5] = "Why do you feel ?";//Open-ended question
             question[6] = "Is it because ";
