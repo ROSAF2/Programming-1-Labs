@@ -13,15 +13,17 @@ namespace ConsoleApp6
         private static string[] question = new string[8];
         private static string[] answer = new string[8];
 
-        static void Test()
+        static void TestMethod()
         {
             //Word arrays
-            string[] positive = new string[] { "good", "fine", "nice" };
-            string[] negative = new string[] { "tired", "exhausted", "angry", "bad", "sick" };
+            string[] positive = new string[] { "good", "fine", "nice","better than ever","hot" };
+            string[] negative = new string[] { "tired", "exhausted", "angry", "bad", "sick","down","blue" };
 
             bool loopCondition = true;
             bool nameCondition = true;
             string previousName = "";
+
+
 
             //Questions
             question[0] = "What is your name?"; // close-ended question
@@ -68,7 +70,7 @@ namespace ConsoleApp6
                     if (answer[4].Contains(positive[i]))
                     {
                         //Question 5
-                        Console.WriteLine("Awesome!, " + question[5].Insert(16, answer[4]));
+                        Console.WriteLine("\nAwesome!, " + question[5].Insert(16, answer[4]));
                         answer[5] = Console.ReadLine();
                         //Question 6
                         Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0, 8) + " that you feel " + answer[4] + "?");
@@ -82,7 +84,7 @@ namespace ConsoleApp6
                     if (answer[4].Contains(negative[i]))
                     {
                         //Question 5 Again
-                        Console.WriteLine("\n" + question[5].Insert(16, answer[4]));
+                        Console.WriteLine("\nOh!. " + question[5].Insert(16, answer[4]));
                         answer[5] = Console.ReadLine();
                         //Question 6 Again
                         Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0, 8) + " that you feel " + answer[4] + "?");
@@ -101,7 +103,7 @@ namespace ConsoleApp6
             do
             {
                 //Combine all questions and create 5 more based on the answers stored in the global variables
-                Test();
+                TestMethod();
                 
             } while (someCondition);
             
