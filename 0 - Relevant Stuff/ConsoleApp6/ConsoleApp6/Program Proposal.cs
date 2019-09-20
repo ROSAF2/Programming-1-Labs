@@ -17,7 +17,8 @@ namespace ConsoleApp6
         {
             //Word arrays
             string[] positive = new string[] { "good", "fine", "nice" };
-            string[] negative = new string[] { "tired", "exhausted", "angry", "bad" };
+            string[] negative = new string[] { "tired", "exhausted", "angry", "bad", "sick" };
+
             bool loopCondition = true;
             bool nameCondition = true;
             string previousName = "";
@@ -62,19 +63,34 @@ namespace ConsoleApp6
                 answer[4] = Console.ReadLine();
                 answer[4] = answer[4].ToLower();
 
-                if (positive.Contains(answer[4]))
+                for (int i = 0; i < positive.Length; i++)
                 {
-                    Console.WriteLine("Awesome!, " + question[5].Insert(16, answer[4]));
+                    if (answer[4].Contains(positive[i]))
+                    {
+                        //Question 5
+                        Console.WriteLine("Awesome!, " + question[5].Insert(16, answer[4]));
+                        answer[5] = Console.ReadLine();
+                        //Question 6
+                        Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0, 8) + " that you feel " + answer[4] + "?");
+                        answer[6] = Console.ReadLine();
+                        Console.WriteLine("\n" + question[7]);
+                    }
                 }
-                else if (negative.Contains(answer[4]))
-                {   //Question 5
-                    Console.WriteLine("\n" + question[5].Insert(16, answer[4]));
-                    answer[5] = Console.ReadLine();
-                    //Question 6
-                    Console.WriteLine("\n" + question[6] + answer[5].Replace("I ","you ").Remove(0, 8) + " that you feel "+ answer[4]+"?");
-                    answer[6] = Console.ReadLine();
-                    Console.WriteLine("\n" + question[7]);
+
+                for (int i = 0; i < negative.Length; i++)
+                {
+                    if (answer[4].Contains(negative[i]))
+                    {
+                        //Question 5 Again
+                        Console.WriteLine("\n" + question[5].Insert(16, answer[4]));
+                        answer[5] = Console.ReadLine();
+                        //Question 6 Again
+                        Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0, 8) + " that you feel " + answer[4] + "?");
+                        answer[6] = Console.ReadLine();
+                        Console.WriteLine("\n" + question[7]);
+                    }
                 }
+
         } while (loopCondition);
                 
         }
