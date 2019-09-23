@@ -16,8 +16,8 @@ namespace ConsoleApp6
         static void TestMethod()
         {
             //Word arrays
-            string[] positive = new string[] { "good", "fine", "nice","better than ever","hot" };
-            string[] negative = new string[] { "tired", "exhausted", "angry", "bad", "sick","down","blue" };
+            string[] positive = { "good", "fine", "nice","better than ever","hot" };
+            string[] negative = { "tired", "exhausted", "angry", "bad", "sick","down","blue" };
 
             bool loopCondition = true;
             bool nameCondition = true;
@@ -73,7 +73,7 @@ namespace ConsoleApp6
                         Console.WriteLine("\nAwesome!, " + question[5].Insert(16, answer[4]));
                         answer[5] = Console.ReadLine();
                         //Question 6
-                        Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0, 8) + " that you feel " + answer[4] + "?");
+                        Console.WriteLine("\n" + question[6] + answer[5].Replace("I ", "you ").Remove(0,8) + " that you feel " + answer[4] + "?");
                         answer[6] = Console.ReadLine();
                         Console.WriteLine("\n" + question[7]);
                     }
