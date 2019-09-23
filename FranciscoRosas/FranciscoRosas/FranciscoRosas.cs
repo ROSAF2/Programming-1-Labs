@@ -19,7 +19,7 @@ namespace FranciscoRosas
 
             bool condition=true;
             int input,rainyDays=0,nonRainyDays=0,validDays=0,inputSum=0,newMax=0;
-            double average;
+            double average=0;
 
             Console.WriteLine("Rain Tracker");
             Console.WriteLine();
@@ -46,9 +46,9 @@ namespace FranciscoRosas
                     validDays++;
                     inputSum += input;
                     newMax = Math.Max(newMax, input);
+
+                    average = inputSum / (double)validDays;
                 }
-                //Average Value
-                average = inputSum / (double)validDays;
 
             } while (condition);
 
