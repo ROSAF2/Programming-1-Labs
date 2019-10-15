@@ -11,7 +11,7 @@ namespace Happy_Rocket
     {
         static void Main()
         {
-            int x=50;
+            const int x=25;
 
             Console.WriteLine("\n\n\n\n\n\n\n\n");
             Console.WriteLine("\t\t\t\tFor a better view of the animation,");

@@ -10,34 +10,29 @@ namespace Lab13Task4
     {
         static void Main()
         {
-            /*
-            string name = "zebra";
+            string line, lineU, lineL;
+            int U = 0, L = 0, S = 0;
+            string special = "1234567890!@#$%^&*()-={};':\"[\\`~<>?/+]_";
+            bool condition = false;
 
-            name = name.Replace('a', 'o');
+            Console.Write("Enter a line of text: ");
+            line = Console.ReadLine();
 
-            Console.WriteLine(name);
-            Console.WriteLine(name.Length);
-            Console.WriteLine(name.Contains("bra"));  BOOLEAN
-            Console.WriteLine(name.ElementAt(0));
-            Console.WriteLine(name.Equals("Zebra"));  BOOLEAN
-            Console.WriteLine(name.IndexOf('a'));
-            Console.WriteLine(name.ToLower());
-            Console.WriteLine(name.ToUpper());
-            */
+            lineU = line.ToUpper();
+            lineL = line.ToLower();
 
-            int uCounter =0,  lCounter=0;
-
-            Console.Write("Please input a line of text: ");
-            string line = Console.ReadLine();
-
-            string upperLine = line.ToUpper();
-
-            for ()
+            for (int i = 0; i < line.Length; i++)
             {
-                if (line[i] = upperLine[i]) uCounter++;
-                else
+                for (int j = 0; j < special.Length; j++)
+                {
+                    if (line[i] == special[j]) condition = true;
+                }
+                if (condition) { S++; condition = false; }
+                else if (line[i] == ' ') ;
+                else if (line[i] == lineU[i]) U++;
+                else if (line[i] == lineL[i]) L++;
             }
-            
+            Console.WriteLine($"\n{U} UPPER CASE LETTERS\n\n{L} lower case letters\n\n{S} special characters");
 
 
             Console.ReadLine();

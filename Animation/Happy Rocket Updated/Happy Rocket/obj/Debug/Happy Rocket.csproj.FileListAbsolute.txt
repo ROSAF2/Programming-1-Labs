@@ -19,3 +19,10 @@ H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happ
 H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
 H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.exe
 H:\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.pdb
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.exe.config
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\bin\Debug\Happy Rocket.pdb
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.csprojAssemblyReference.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.csproj.CoreCompileInputs.cache
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.exe
+C:\Users\Val\Desktop\Otago Polytechnic\BIT COURSE\IN510 001 Programming 1\Programming-1-Labs\Animation\Happy Rocket Updated\Happy Rocket\obj\Debug\Happy Rocket.pdb
