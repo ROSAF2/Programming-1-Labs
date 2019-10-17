@@ -12,7 +12,7 @@ namespace Lab13Task4
         {
             string line, lineU, lineL;
             int U = 0, L = 0, S = 0;
-            string special = "1234567890!@#$%^&*()-={};':\"[\\`~<>?/+]_";
+            string special = "1234567890!@#$%^&*()-={};':\"[\\`~<>?/+]_ ";
             bool condition = false;
 
             Console.Write("Enter a line of text: ");
@@ -28,7 +28,7 @@ namespace Lab13Task4
                     if (line[i] == special[j]) condition = true;
                 }
                 if (condition) { S++; condition = false; }
-                else if (line[i] == ' ') ;
+                //else if (line[i] == ' ') ;
                 else if (line[i] == lineU[i]) U++;
                 else if (line[i] == lineL[i]) L++;
             }
