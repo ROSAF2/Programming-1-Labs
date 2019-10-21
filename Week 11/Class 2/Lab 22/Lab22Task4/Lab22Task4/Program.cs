@@ -9,7 +9,8 @@ namespace Lab22Task4
 {
     public struct Student
     {
-        public string name;
+        public string firstName;
+        public string lastName;
         public string address;
         public int team;
     }
@@ -22,7 +23,8 @@ namespace Lab22Task4
             
             for (int i = 0; i < 30; i++)
             {
-                array[i].name = sr.ReadLine();
+                array[i].firstName = sr.ReadLine();
+                array[i].lastName = sr.ReadLine();
                 array[i].address = "Dunedin";
                 array[i].team = rand.Next(1, 5);
             }
@@ -33,7 +35,7 @@ namespace Lab22Task4
         {
             for (int i = 0; i < 30; i++)
             {
-                Console.WriteLine(array[i].name.PadRight(25)+ array[i].address.PadRight(10)+ array[i].team.ToString().PadLeft(10));
+                Console.WriteLine(array[i].firstName.PadRight(12)+" "+ array[i].lastName.PadRight(21)+ array[i].address.PadRight(10)+ array[i].team.ToString().PadLeft(5));
             }
         }
         public static void Method3(Student[] array)
@@ -42,7 +44,7 @@ namespace Lab22Task4
 
             for (int i = 0; i < 30; i++)
             {
-                sw.WriteLine(array[i].name.PadRight(25) + array[i].address.PadRight(10) + array[i].team.ToString().PadLeft(10));
+                sw.WriteLine(array[i].firstName.PadRight(12) + " " + array[i].lastName.PadRight(21) + array[i].address.PadRight(10) + array[i].team.ToString().PadLeft(5));
             }
             sw.Close();
         }
