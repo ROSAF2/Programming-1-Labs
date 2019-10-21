@@ -12,10 +12,10 @@ namespace ConsoleApp11
         static void ReadMethod()
         {
             StreamReader sr = new StreamReader("File.txt");
-            /*
+            
             string line = sr.ReadLine();
             Console.WriteLine(line);
-            */
+            
             /*
             string everyline = sr.ReadToEnd();
             Console.WriteLine(everyline);
@@ -34,9 +34,9 @@ namespace ConsoleApp11
 
         static void Main()
         {
-            //ReadMethod();
-            WriteMethod();
-            Console.WriteLine(DateTime.Now);
+            ReadMethod();
+            //WriteMethod();
+            //Console.WriteLine(DateTime.Now);
             Console.ReadLine();
         }
     }
