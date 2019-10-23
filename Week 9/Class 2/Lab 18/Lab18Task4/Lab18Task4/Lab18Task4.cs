@@ -46,7 +46,7 @@ namespace Lab18Task4
 
         static void Main()
         {
-            string input;
+            int input;
             do
             {
                 Console.WriteLine("The menu options are: ");
@@ -57,22 +57,22 @@ namespace Lab18Task4
                 Console.Write("\n0".PadRight(10)); Console.Write("Exit menu system");
 
                 Console.Write("\n\nSelect an option: ");
-                input = Console.ReadLine();
+                input = Convert.ToInt32(Console.ReadLine());
 
                 switch (input)
                 {
-                    case "0":
+                    case 0:
                         break;
-                    case "1":
+                    case 1:
                         Method1();
                         break;
-                    case "2":
+                    case 2:
                         Method2();
                         break;
-                    case "3":
+                    case 3:
                         Method3();
                         break;
-                    case "4":
+                    case 4:
                         Method4();
                         break;
                     default:
@@ -80,7 +80,7 @@ namespace Lab18Task4
                         break;
                 }
 
-            } while (input != "0");
+            } while (input != 0);
 
             Console.WriteLine("\nExiting the program");
 
