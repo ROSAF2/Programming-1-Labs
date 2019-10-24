@@ -7,7 +7,7 @@ using System.IO;
 
 namespace FinalAssignment
 {
-    public struct ContestantInfo
+    public struct ContestantDetails
     {
         public string lastName;
         public string firstName;
@@ -16,9 +16,9 @@ namespace FinalAssignment
     class FinalAssignment
     {
         private static Random rand = new Random();
-        public static void ReadingFromFile(ContestantInfo[] array)
+        public static void ReadingFromFile(ContestantDetails[] array, string filePath)
         {
-            StreamReader sr = new StreamReader("millionaire.txt");
+            StreamReader sr = new StreamReader(filePath);
             for (int i = 0; i < array.Length; i++)
             {
                 array[i].firstName = sr.ReadLine();
@@ -27,9 +27,9 @@ namespace FinalAssignment
             }
             sr.Close();
         }
-        public static void WritingToFile(ContestantInfo[] array)
+        public static void WritingToFile(ContestantDetails[] array, string filePath)
         {
-            StreamWriter sw = new StreamWriter("millionaire.txt");
+            StreamWriter sw = new StreamWriter(filePath);
             for (int i = 0; i < array.Length; i++)
             {
                 sw.WriteLine(array[i].firstName);
@@ -38,7 +38,7 @@ namespace FinalAssignment
             }
             sw.Close();
         }
-        public static void PlayerUpdate(ContestantInfo[] array)
+        public static void PlayerUpdate(ContestantDetails[] array, string filePath)
         {
             bool condition = true;
             while (condition)
@@ -49,7 +49,7 @@ namespace FinalAssignment
                 if (answer != "0")
                 {
                     string[] answerSplit = answer.Split(' ');
-                    ReadingFromFile(array);
+                    ReadingFromFile(array,filePath);
                     for (int i = 0; i < array.Length; i++)
                     {
                         Console.Clear();
@@ -70,7 +70,7 @@ namespace FinalAssignment
                                 Console.Write("\nWrite the new interest: ");
                                 array[i].interest = Console.ReadLine();
                                 //Calling WritingToFile method to update the list
-                                WritingToFile(array);
+                                WritingToFile(array,filePath);
                                 Console.WriteLine("\nInterest updated");
                                 Console.ReadLine();
                                 //This break, breaks the for loop to stop iterating through other people with the same name
@@ -121,7 +121,6 @@ namespace FinalAssignment
                         j = -1;
                     }
                 }
-                //Console.WriteLine($"{i + 1}.- {RandomNumber[i]}");
             }
             return randomNumber;
         }
@@ -145,7 +144,9 @@ namespace FinalAssignment
             int input;
             do
             {
-                ContestantInfo[] array = new ContestantInfo[30];
+                ContestantDetails[] arrayOfContestants = new ContestantDetails[30];
+                //Path where the file is
+                string filePath = "millionaire.txt";
 
                 Console.WriteLine("The menu options are: ");
                 Console.Write("\n1".PadRight(10)); Console.Write("List all the contestants");
@@ -163,36 +164,36 @@ namespace FinalAssignment
                         break;
                     case 1:
                         Console.Clear();
-                        ReadingFromFile(array);
+                        ReadingFromFile(arrayOfContestants,filePath);
                         //This loop displays the contents of the array
-                        for (int i = 0; i < array.Length; i++)
+                        for (int i = 0; i < arrayOfContestants.Length; i++)
                         {
-                            Console.WriteLine(array[i].lastName.PadRight(20) + array[i].firstName.PadRight(15) + array[i].interest.PadRight(15));
+                            Console.WriteLine(arrayOfContestants[i].lastName.PadRight(25) + arrayOfContestants[i].firstName.PadRight(15) + arrayOfContestants[i].interest.PadRight(15));
                         }
                         Console.ReadLine();
                         Console.Clear();
                         break;
                     case 2:
                         //This method asks for a player in order to update their interest
-                        PlayerUpdate(array);
+                        PlayerUpdate(arrayOfContestants,filePath);
                         Console.Clear();
                         break;
                     case 3:
                         Console.Clear();
-                        ReadingFromFile(array);
+                        ReadingFromFile(arrayOfContestants,filePath);
                         //Calling an array of random numbers between 0 to 29 without repetition
                         int[] randomNumber = LottoSelection();
                         //Displaying the participant whose index matches the random number previously generated
                         for (int i = 0; i < 10; i++)
                         {
-                            Console.WriteLine($"{i + 1}.-".PadRight(5) + $"{array[randomNumber[i]].firstName} {array[randomNumber[i]].lastName}");
+                            Console.WriteLine($"{i + 1}.-".PadRight(5) + $"{arrayOfContestants[randomNumber[i]].firstName} {arrayOfContestants[randomNumber[i]].lastName}");
                         }
 
                         //A random number from 0 to 9 in order to choose a random contestant
                         int playerNumber = rand.Next(0, 10);
                         //The name of the player is: 
                         Console.Write("\nThe player will be: ");
-                        Console.WriteLine($"{array[randomNumber[playerNumber]].firstName} {array[randomNumber[playerNumber]].lastName}");
+                        Console.WriteLine($"{arrayOfContestants[randomNumber[playerNumber]].firstName} {arrayOfContestants[randomNumber[playerNumber]].lastName}");
                         Console.ReadLine();
                         Console.Clear();
                         break;
