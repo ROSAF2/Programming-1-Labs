@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Threading;
 
 namespace FinalAssignment
 {
@@ -12,11 +13,14 @@ namespace FinalAssignment
         public string lastName;
         public string firstName;
         public string interest;
+        //Added Rank field to sort the names according to their ranking later
+        public int rank;
     }
     class FinalAssignment
     {
+        //Global Random instructions
         private static Random rand = new Random();
-        public static void ReadingFromFile(ContestantDetails[] array, string filePath)
+        public static void ReadingNamesFromFile(ref ContestantDetails[] array, string filePath)
         {
             StreamReader sr = new StreamReader(filePath);
             for (int i = 0; i < array.Length; i++)
@@ -27,7 +31,7 @@ namespace FinalAssignment
             }
             sr.Close();
         }
-        public static void WritingToFile(ContestantDetails[] array, string filePath)
+        public static void WritingToFile(ref ContestantDetails[] array, string filePath)
         {
             StreamWriter sw = new StreamWriter(filePath);
             for (int i = 0; i < array.Length; i++)
@@ -49,7 +53,7 @@ namespace FinalAssignment
                 if (answer != "0")
                 {
                     string[] answerSplit = answer.Split(' ');
-                    ReadingFromFile(array,filePath);
+                    ReadingNamesFromFile(ref array,filePath);
                     for (int i = 0; i < array.Length; i++)
                     {
                         Console.Clear();
@@ -124,38 +128,26 @@ namespace FinalAssignment
             }
             return randomNumber;
         }
-        public static void Method4()
-        {
-            Console.Clear();
-            Console.WriteLine("This is Method 4");
-            Console.ReadLine();
-            Console.Clear();
-        }
-        public static void Invalid()
-        {
-            Console.Clear();
-            Console.WriteLine("Please enter a valid option.");
-            Console.ReadLine();
-            Console.Clear();
-        }
 
         static void Main()
         {
+            //Creating an array of the type "ContestantDetails" with 30 slots
+            ContestantDetails[] arrayOfContestants = new ContestantDetails[30];
+            //Path where the file is
+            string filePath = "millionaire.txt";
             int input;
             do
             {
-                ContestantDetails[] arrayOfContestants = new ContestantDetails[30];
-                //Path where the file is
-                string filePath = "millionaire.txt";
-
-                Console.WriteLine("The menu options are: ");
-                Console.Write("\n1".PadRight(10)); Console.Write("List all the contestants");
-                Console.Write("\n2".PadRight(10)); Console.Write("Update player's interest");
-                Console.Write("\n3".PadRight(10)); Console.Write("lotto problem");
-                Console.Write("\n4".PadRight(10)); Console.Write("Randomly selesc");
-                Console.Write("\n0".PadRight(10)); Console.Write("Exit menu system");
-
-                Console.Write("\n\nSelect an option: ");
+                Console.WriteLine("\n\n\n\n\n\t\t\t\t\t     Who Wants to Be a Millionaire?");
+                Console.WriteLine("\n\n\n\t\t\t\t\t\t\tNew Game");
+                Console.WriteLine("\t\t\t\t\t\t\t[Press 1]");
+                Console.WriteLine("\n\t\t\t\t\t\t\t Options");
+                Console.WriteLine("\t\t\t\t\t\t\t[Press 2]");
+                Console.WriteLine("\n\t\t\t\t\t\t\t Credits");
+                Console.WriteLine("\t\t\t\t\t\t\t[Press 3]");
+                Console.WriteLine("\n\t\t\t\t\t\t\tQuit Game");
+                Console.WriteLine("\t\t\t\t\t\t\t[Press 0]");
+                Console.Write("\n\t\t\t\t\t\t\t:");
                 input = Convert.ToInt32(Console.ReadLine());
 
                 switch (input)
@@ -164,7 +156,24 @@ namespace FinalAssignment
                         break;
                     case 1:
                         Console.Clear();
-                        ReadingFromFile(arrayOfContestants,filePath);
+
+                        //This method fills the previosuly created array with the information from the given file
+                        ReadingNamesFromFile(ref arrayOfContestants,filePath);
+
+                        //This is the bubble sort algorith to sort the names in alphabetical order
+                        for (int i = 0; i < arrayOfContestants.Length - 1; i++)
+                        {
+                            for (int j = 0; j < arrayOfContestants.Length - 1; j++)
+                            {
+                                if (arrayOfContestants[j + 1].lastName.CompareTo(arrayOfContestants[j].lastName) < 0)
+                                {
+                                    ContestantDetails swap = arrayOfContestants[j];
+                                    arrayOfContestants[j] = arrayOfContestants[j + 1];
+                                    arrayOfContestants[j + 1] = swap;
+                                }
+                            }
+                        }
+
                         //This loop displays the contents of the array
                         for (int i = 0; i < arrayOfContestants.Length; i++)
                         {
@@ -179,37 +188,13 @@ namespace FinalAssignment
                         Console.Clear();
                         break;
                     case 3:
-                        Console.Clear();
-                        ReadingFromFile(arrayOfContestants,filePath);
-                        //Calling an array of random numbers between 0 to 29 without repetition
-                        int[] randomNumber = LottoSelection();
-                        //Displaying the participant whose index matches the random number previously generated
-                        for (int i = 0; i < 10; i++)
-                        {
-                            Console.WriteLine($"{i + 1}.-".PadRight(5) + $"{arrayOfContestants[randomNumber[i]].firstName} {arrayOfContestants[randomNumber[i]].lastName}");
-                        }
-
-                        //A random number from 0 to 9 in order to choose a random contestant
-                        int playerNumber = rand.Next(0, 10);
-                        //The name of the player is: 
-                        Console.Write("\nThe player will be: ");
-                        Console.WriteLine($"{arrayOfContestants[randomNumber[playerNumber]].firstName} {arrayOfContestants[randomNumber[playerNumber]].lastName}");
-                        Console.ReadLine();
-                        Console.Clear();
-                        break;
-                    case 4:
-                        Method4();
-
-
-                        break;
-                    default:
-                        Invalid();
                         break;
                 }
 
             } while (input != 0);
 
-            Console.WriteLine("\nExiting the program");
+            Console.WriteLine("\nAre you sure you want to exit the game?");
+            Console.WriteLine("Exiting the program");
 
             Console.ReadLine();
         }
