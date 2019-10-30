@@ -235,17 +235,19 @@ namespace ConsoleApp15
             SwapAlgorithmAnswerStruct(ref swappedABCD);
 
             Console.Clear();
-            Console.Write("\n\t\tWhoever answers the next question first, will have the chance to win $1,000,000 NZD!!");
+            Console.Write("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t ...\n\n");
+            Console.Write("\t\tWhoever answers the next question first, will have the chance to win $1,000,000 NZD!!");
             Console.Write("\n\n\t\t\t\t\t\t\t ...");
             Console.ReadLine();
-            Console.WriteLine("---------------------------------------------------------------------------------------------------------------------");
+            Console.Clear();
+            Console.WriteLine("\n\n\n      --------------------------------------------------------------------------------------------------------");
             Console.WriteLine($"\n\tQuestion.-\n");
             Console.WriteLine($"\t" + set[0].questionPhrase);
             Console.WriteLine("\n");
             Console.WriteLine($"\t\t" + ("A: " + swappedABCD[0].answer.PadRight(40)) + ("B: " + swappedABCD[1].answer.PadRight(40)));
             Console.WriteLine($"\t\t" + ("C: " + swappedABCD[2].answer.PadRight(40)) + ("D: " + swappedABCD[3].answer.PadRight(40)));
             Console.WriteLine("\n");
-            Console.Write("--------------------------------------------------------------------------------------------------------------------");
+            Console.Write("      --------------------------------------------------------------------------------------------------------");
             Console.Write("\n\t\t\t\t\t\t\t  ...");
             Thread.Sleep(1000);
             Console.WriteLine("\n\n\t\t\t\t\t    Time's up!, the right answer is:\n");
@@ -593,25 +595,20 @@ namespace ConsoleApp15
                                 fiftyBoolean = false;  //This condition stays the same for the rest of the game
                                 fiftyCheck = true; //This condition helps "Ask the Audience" and "Phone a Friend", it resets to true with every for-loop
                                 auxiliarNumber = i; //This condition helps "Ask the Audience" and "Phone a Friend"
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
                             else
                             {
                                 Console.WriteLine("\n\t\t\t\t\t  You cannot use this option anymore");
                                 Console.ReadLine();
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
                             //This is for checking which lifetime was executed first
                             if (firstFifty && firstAudience)
                             {
                                 firstAudience = false;
                             }
+                            ////////////////////////
+                            RefreshScreen(ref i, ref whileCondition);
+                            /////////////////////////
                             break;
                         case "2"://Ask the audience
                             if (audienceBoolean)
@@ -699,25 +696,20 @@ namespace ConsoleApp15
                                 audience = "Used";
                                 audienceBoolean = false;
                                 audienceCheck = true;
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
                             else
                             {
                                 Console.WriteLine("\n\t\t\t\t\t  You cannot use this option anymore");
                                 Console.ReadLine();
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
                             //This is for checking which lifetime was executed first
                             if (firstFifty && firstAudience)
                             {
                                 firstFifty = false;
                             }
+                            ////////////////////////
+                            RefreshScreen(ref i, ref whileCondition);
+                            /////////////////////////
                             break;
                         case "3"://Phone a friend depends heavily on "50/50" because 50/50 reduces the amount of questions that the friend can choose from
                             if (phoneBoolean)
@@ -748,20 +740,15 @@ namespace ConsoleApp15
                                 phone = "Used";
                                 phoneBoolean = false;
                                 phoneCheck = true;
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
                             else
                             {
                                 Console.WriteLine("\n\t\t\t\t\t  You cannot use this option anymore");
                                 Console.ReadLine();
-
-                                ////////////////////////
-                                RefreshScreen(ref i, ref whileCondition);
-                                /////////////////////////
                             }
+                            ////////////////////////
+                            RefreshScreen(ref i, ref whileCondition);
+                            /////////////////////////
                             break;
                         case "l":
                             if (moneyPrizes[i - 1] == 0)
@@ -827,10 +814,13 @@ namespace ConsoleApp15
                                     Console.Write("\n\t\t\t\t\t\tPlease enter a valid input");
                                 }
                             }
+                            ////////////////////////
+                            RefreshScreen(ref i, ref whileCondition);
+                            /////////////////////////
                             break;
                         case "h":
                             Console.WriteLine("\n\t\t\t\t     This feature is only available in the paid version");
-                            Thread.Sleep(1000);
+                            Console.ReadLine();
                             Console.WriteLine("\n\t\t\t\t     Nah, just kidding. Here is the omnipotent hint: \"" + storedValues[storedRightIndex].letter + "\"");
                             break;
                         case "0":
@@ -839,6 +829,9 @@ namespace ConsoleApp15
                             Console.Write("\n\t\t\t\t\t\t\t  :");
                             input = Console.ReadLine();
                             YesOrNoToMenuQuestion(ref input, ref backToMenu, ref whileCondition);
+                            ////////////////////////
+                            RefreshScreen(ref i, ref whileCondition);
+                            /////////////////////////
                             break;
                         default:
                             Console.WriteLine("\n\t\t\t\t\t   Invalid answer, please try again");
@@ -964,10 +957,12 @@ namespace ConsoleApp15
                             bool condition2 = true;
                             while (condition2)
                             {
-                                Console.WriteLine($"Player found: {array[i].firstName} {array[i].lastName}");
-                                Console.WriteLine($"Current interest: {array[i].interest}");
+                                Console.Write("\n\n\n\n\n\n\n\t\t\t\t\t\t\t  ...\n\n");
+                                Console.WriteLine($"\t\t\t\t\t   Player found: {array[i].firstName} {array[i].lastName}");
+                                Console.WriteLine($"\t\t\t\t\t   Current interest: {array[i].interest}");
 
-                                Console.WriteLine("\nIs this the player you are looking for? (Y/N): ");
+                                Console.WriteLine($"\n\t\t\t\t      Is this the player you are looking for? (Y/N)");
+                                Console.Write("\n\t\t\t\t\t\t\t   :");
                                 input = Console.ReadLine();
 
                                 if (input != "")
@@ -975,12 +970,15 @@ namespace ConsoleApp15
                                     input = input.ToLower();
                                     if (input[0] == 'y')
                                     {
-                                        Console.Write("\nWrite the new interest: ");
+                                        Console.Write("\n\t\t\t\t\t\t\t  ...");
+                                        Console.Write("\n\n\t\t\t\t\t\t  Write the new interest");
+                                        Console.Write("\n\n\t\t\t\t\t\t  :");
                                         array[i].interest = Console.ReadLine();
                                         //Calling WritingToFile method to update the list
                                         WritingToFile(ref array, filePath);
-                                        Console.Write("\n\t\t\t\t\t\t\t  ...");
-                                        Console.WriteLine("\nInterest updated");
+                                        Console.Clear();
+                                        Console.Write("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t  ...");
+                                        Console.WriteLine("\n\n\t\t\t\t\t\t    Interest updated");
                                         Console.Write("\n\t\t\t\t\t\t\t  ...");
                                         Console.ReadLine();
                                         condition2 = false;
@@ -1002,7 +1000,9 @@ namespace ConsoleApp15
                         bool condition2 = true;
                         while (condition2)
                         {
-                            Console.WriteLine("The name is not in the database, do you want to try again? (Y/N): ");
+                            Console.Write("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t  ...\n");
+                            Console.WriteLine($"\n\t\t\t      The name is not in the database, do you want to try again? (Y/N): ");
+                            Console.Write("\n\t\t\t\t\t\t\t   :");
                             input = Console.ReadLine();
 
                             if (input != "")
@@ -1090,7 +1090,7 @@ namespace ConsoleApp15
         }
         public static void Credits()
         {
-            Console.Write("\n\n\n\n\n\n\n\t\t\t\t\t\t\t  ...\n\n");
+            Console.Write("\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\t  ...\n\n");
             Console.WriteLine("\t\t        This game was possible thanks to the knowledge and skills that I acquired");
             Console.WriteLine("\t\t\t   during my Programming classes in the first semester of my first year");
             Console.WriteLine("\t\t    in the Bachelor of Information Technology at the Otago Polytechnic (Dunedin Campus)");
