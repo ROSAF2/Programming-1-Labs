@@ -172,7 +172,6 @@ namespace ConsoleApp15
                 Console.ReadLine();
             }
         } //This method is executed if the player has answered incorrectly
-
         public static void RefreshScreen(ref int i, ref bool whileCondition)
         {
             i--;
@@ -434,19 +433,19 @@ namespace ConsoleApp15
                         //50/50 and then audience (2)
                         if (firstFifty)
                         {
-                            Console.Write("\n\n\t\t50/50".PadRight(39) + "Ask the Audience".PadRight(28) + "Phone a Friend\n\n");
-                            Console.WriteLine("        " + fiftyValues2Slots[0].PadRight(48) + audienceValues2Slots[0].PadRight(20) + "Your friend says that");
-                            Console.WriteLine("        " + fiftyValues2Slots[1].PadRight(48) + audienceValues2Slots[1].PadRight(20) + "\"{0}\"", phoneValue);
-                            Console.WriteLine("\t\t\t\t\t\t\t\t\t    Is the right answer");
+                            Console.Write("\n\n\t\t50/50".PadRight(39) + "Ask the Audience".PadRight(28) + "Phone a Friend".PadLeft(27)+"\n\n");
+                            Console.WriteLine("        " + fiftyValues2Slots[0].PadRight(48) + audienceValues2Slots[0].PadRight(20) + "Your friend says that".PadLeft(35));
+                            Console.WriteLine("        " + fiftyValues2Slots[1].PadRight(48) + audienceValues2Slots[1].PadRight(20) + phoneValue.PadLeft(35));
+                            Console.WriteLine("\t\t\t\t\t\t\t\t\t    Is the right answer".PadLeft(50));
                         }
                         //Audience and then 50/50 (4)
                         else
                         {
-                            Console.Write("\n\n\t\t50/50".PadRight(39) + "Ask the Audience".PadRight(28) + "Phone a Friend\n\n");
-                            Console.WriteLine("        " + fiftyValues2Slots[0].PadRight(48) + audienceValues4Slots[0].PadRight(20) + "Your friend says that");
-                            Console.WriteLine("        " + fiftyValues2Slots[1].PadRight(48) + audienceValues4Slots[1].PadRight(20) + "\"{0}\"", phoneValue);
-                            Console.WriteLine("\t\t\t  " + "".PadRight(52) + audienceValues4Slots[2].PadRight(30) + "Is the right answer");
-                            Console.WriteLine("\t\t\t  " + "".PadRight(52) + audienceValues4Slots[3]);
+                            Console.Write("\n\n\t\t50/50".PadRight(39) + "Ask the Audience".PadRight(28) + "Phone a Friend".PadLeft(27) + "\n\n");
+                            Console.WriteLine("        " + fiftyValues2Slots[0].PadRight(48) + audienceValues4Slots[0].PadRight(20) + "Your friend says that".PadLeft(35));
+                            Console.WriteLine("        " + fiftyValues2Slots[1].PadRight(48) + audienceValues4Slots[1].PadRight(20) + phoneValue.PadLeft(35));
+                            Console.WriteLine("\t\t\t  " + "".PadRight(30) + audienceValues4Slots[2].PadRight(36) + "Is the right answer");
+                            Console.WriteLine("\t\t\t  " + "".PadRight(30) + audienceValues4Slots[3]);
                         }
                     }
                     else if (fiftyCheck && audienceCheck)
@@ -482,7 +481,7 @@ namespace ConsoleApp15
                         Console.Write("\n\n\t\t\t\t    Ask the Audience".PadRight(30) + "\t\t  Phone a Friend\n\n");
                         Console.WriteLine("\t\t\t\t\t " + audienceValues4Slots[0].PadRight(30) + "Your friend says that");
                         Console.WriteLine("\t\t\t\t\t " + audienceValues4Slots[1].PadRight(30) + "\"{0}\"", phoneValue);
-                        Console.WriteLine("\t\t\t\t\t " + audienceValues4Slots[2].PadRight(30) + "Is the right answer");
+                        Console.WriteLine("\t\t\t\t\t " + audienceValues4Slots[2].PadRight(31) + "Is the right answer");
                         Console.WriteLine("\t\t\t\t\t " + audienceValues4Slots[3].PadRight(30));
                     }
                     else if (fiftyCheck)
