@@ -44,6 +44,15 @@ namespace ConsoleApp15
             }
             sr.Close();
         }
+        public static void ReadingRankingsFromFile(ref int[] array, string filePath)
+        {
+            StreamReader sr = new StreamReader(filePath);
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = Convert.ToInt32(sr.ReadLine());
+            }
+            sr.Close();
+        }
         public static void WritingToFile(ref ContestantDetails[] array, string filePath)
         {
             StreamWriter sw = new StreamWriter(filePath);
@@ -52,6 +61,15 @@ namespace ConsoleApp15
                 sw.WriteLine(array[i].firstName);
                 sw.WriteLine(array[i].lastName);
                 sw.WriteLine(array[i].interest);
+            }
+            sw.Close();
+        }
+        public static void WritingRankingsToFile(ref int[] array, string filePath)
+        {
+            StreamWriter sw = new StreamWriter(filePath);
+            for (int i = 0; i < array.Length; i++)
+            {
+                sw.WriteLine(array[i]);
             }
             sw.Close();
         }
@@ -799,8 +817,19 @@ namespace ConsoleApp15
                                             Console.Write($"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t  Thanks for playing, enjoy your ${moneyPrizes[i - 1]:N0}!");
                                             Console.Write("\n\n\t\t\t\t\t\t\t  ...");
                                             Console.ReadLine();
+
+                                            //Updating the Rankings with the money earned
+
+                                            int[] rankingsArray = new int[30];
+                                            ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
+
+                                            rankingsArray[randomNumber[indexOfTheLowestValue]] = rankingsArray[randomNumber[indexOfTheLowestValue]] + moneyPrizes[i - 1];
+
+                                            WritingRankingsToFile(ref rankingsArray, "Rankings.txt");
+
                                             backToMenu = true;
                                             whileCondition = false;
+                                            
                                             break;
                                         case 'n':
                                             break;
@@ -819,9 +848,9 @@ namespace ConsoleApp15
                             /////////////////////////
                             break;
                         case "h":
-                            Console.WriteLine("\n\t\t\t\t     This feature is only available in the paid version");
-                            Console.ReadLine();
-                            Console.WriteLine("\n\t\t\t\t     Nah, just kidding. Here is the omnipotent hint: \"" + storedValues[storedRightIndex].letter + "\"");
+                            //Console.WriteLine("\n\t\t\t\t     This feature is only available in the paid version");
+                            //Console.ReadLine();
+                            Console.WriteLine("\n\t\t\t\t\t     Here is the omnipotent hint: \"" + storedValues[storedRightIndex].letter + "\"");
                             break;
                         case "0":
                             Console.WriteLine("\n\t\t\t\t    Are you sure you want to go back to the main menu?");
@@ -1075,6 +1104,29 @@ namespace ConsoleApp15
                     case "3":
                         Console.Clear();
                         Console.WriteLine("Here go the rankings");
+                        
+                        //This method fills the previosuly created array with the information from the given file
+                        ReadingNamesFromFile(ref arrayOfContestants, filePath);
+                        int[] rankingsArray = new int[30];
+                        ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
+
+                        string[] contestantsPlusRankings = new string[30];
+
+                        for (int i = 0; i < contestantsPlusRankings.Length; i++)
+                        {
+
+                        }
+                        
+                        //Sorting the names
+                        BubbleSort(ref arrayOfContestants);
+
+                        Console.Write("\n\t\t\t\t\t\t\t  ...\n\n");
+                        //Displaying the names
+                        for (int i = 0; i < arrayOfContestants.Length; i++)
+                        {
+                            Console.WriteLine("\t\t\t\t" + arrayOfContestants[i].lastName.PadRight(25) + arrayOfContestants[i].firstName.PadRight(15) + arrayOfContestants[i].rank.ToString().PadRight(15));
+                        }
+                        Console.Write("\n\t\t\t\t\t\t\t  ...");
                         Console.ReadLine();
                         Console.Clear();
                         break;
