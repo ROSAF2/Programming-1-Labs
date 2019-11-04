@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Lab15Taks6_V2
 {
+    public struct name
+    {
+        public string fname;
+    }
     class Program
     {
         static void Main()
         {
+            name[] Lastname = new name[30];
+
             Random rand = new Random();
             int[] finalists = new int[10];
 
@@ -25,9 +31,13 @@ namespace Lab15Taks6_V2
                     lot = rand.Next(0,30);
                 }
                 finalists[i] = lot;
-                Console.WriteLine(finalists[i]);
             }
-            Console.ReadLine();
+            //Ten Finalists
+            for (int i = 0; i < finalists.Length; i++)
+            {
+                Console.WriteLine(Lastname[finalists[i]].fname);
+
+            }
         }
     }
 }
