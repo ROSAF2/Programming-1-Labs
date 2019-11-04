@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{85905D19-2E9B-400E-86EC-F6AFE58798DA}</ProjectGuid>
+    <ProjectGuid>{0F48BBCF-6E42-48F6-AFAB-5C82049CF7B0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Francisco</RootNamespace>
-    <AssemblyName>Francisco</AssemblyName>
+    <RootNamespace>Beginning</RootNamespace>
+    <AssemblyName>Beginning</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FranzClass.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

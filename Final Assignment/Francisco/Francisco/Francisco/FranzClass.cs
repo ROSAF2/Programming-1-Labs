@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.IO;
 
-namespace ConsoleApp15
+namespace Francisco
 {
     public struct ContestantDetails
     {
         public string lastName;
         public string firstName;
         public string interest;
-        //Added Rank field to sort the names according to their ranking later
-        public int rank; //arrayOfContestants[randomNumber[indexOfTheLowestValue]].rank
+        public int rank;
     }
     public struct QuestionSctructure
     {
@@ -30,7 +29,7 @@ namespace ConsoleApp15
         public string answer;
         public int percentage;
     }
-    class Program
+    class FranzClass
     {
         private static Random rand = new Random();
         public static void ReadingNamesFromFile(ref ContestantDetails[] array, string filePath)
@@ -152,7 +151,7 @@ namespace ConsoleApp15
                 letters++;
             }
         }
-        public static void AnsweredIncorrectly(int i, int[] moneyPrizes, string correctAnswer)
+        public static void AnsweredIncorrectly(int i, int[] moneyPrizes, string correctAnswer, int index)
         {
             Console.WriteLine($"\n\t\t\t       You just lost ${moneyPrizes[i]:N0}, the correct answer was: \"{correctAnswer}\"");
             Console.Write("\n\t\t\t\t\t\t\t  ...");
@@ -163,7 +162,7 @@ namespace ConsoleApp15
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
                 Console.Clear();
-                Console.WriteLine("\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tBetter luck next time!");
+                Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tBetter luck next time!");
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
             }
@@ -174,9 +173,16 @@ namespace ConsoleApp15
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
                 Console.Clear();
-                Console.WriteLine("\n\n\n\n\n\n\n\n\n\t\t\t\t\tThanks for playing, enjoy your $1,000!");
+                Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\tThanks for playing, enjoy your $1,000!");
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
+                //Updating the Rankings with the money earned
+                //Creating an array to store the rankings saved in the text file
+                int[] rankingsArray = new int[30];
+                ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
+                rankingsArray[index] = rankingsArray[index] + 1000;
+                WritingRankingsToFile(ref rankingsArray, "Rankings.txt");
+
             }
             else if (i <= 15)
             {
@@ -185,9 +191,15 @@ namespace ConsoleApp15
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
                 Console.Clear();
-                Console.WriteLine("\n\n\n\n\n\n\n\n\n\t\t\t\t\tThanks for playing, enjoy your $32,000!");
+                Console.WriteLine("\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\tThanks for playing, enjoy your $32,000!");
                 Console.Write("\n\t\t\t\t\t\t\t  ...");
                 Console.ReadLine();
+                //Updating the Rankings with the money earned
+                //Creating an array to store the rankings saved in the text file
+                int[] rankingsArray = new int[30];
+                ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
+                rankingsArray[index] = rankingsArray[index] + 32000;
+                WritingRankingsToFile(ref rankingsArray, "Rankings.txt");
             }
         } //This method is executed if the player has answered incorrectly
         public static void RefreshScreen(ref int i, ref bool whileCondition)
@@ -267,7 +279,7 @@ namespace ConsoleApp15
             Console.WriteLine("\n");
             Console.Write("      --------------------------------------------------------------------------------------------------------");
             Console.Write("\n\t\t\t\t\t\t\t  ...");
-            Thread.Sleep(1000);
+            Console.ReadLine();
             Console.WriteLine("\n\n\t\t\t\t\t    Time's up!, the right answer is:\n");
 
             //Filling the letter field of the Struct AnswerStruct with A, B, C, D in order (For question 0)
@@ -354,7 +366,7 @@ namespace ConsoleApp15
             bool firstFifty = true, firstAudience = true;
 
 
-            //VARIABLES FORCAPTURING THE FINAL VALUES OF THE LIFELINES
+            //VARIABLES FOR CAPTURING THE FINAL VALUES OF THE LIFELINES
             //Creating an array to hold the values from applying "50/50"
             string[] fiftyValues4Slots = new string[4];
             string[] fiftyValues2Slots = new string[2];
@@ -367,6 +379,8 @@ namespace ConsoleApp15
 
             int auxiliarNumber = 0;
             int counter = 1; //This counter is incremented at the end of the for-loop
+
+
             //FOR LOOP Questions [1] to [15]
             for (int i = 1; i < 16; i++)
             {
@@ -420,7 +434,7 @@ namespace ConsoleApp15
                     }
                 }
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                /*
+                /*//Piece of code to display the current values previouly stored
                 for (int j = 0; j < storedValues.Length; j++)
                 {
                     Console.WriteLine(storedValues[j].letter + storedValues[j].answer + storedValues[j].percentage);
@@ -542,7 +556,7 @@ namespace ConsoleApp15
                                 counter = i;
                             }
                             else
-                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer); backToMenu = true; }
+                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer, randomNumber[indexOfTheLowestValue]); backToMenu = true; }
 
                             whileCondition = false;
                             break;
@@ -556,7 +570,7 @@ namespace ConsoleApp15
                                 counter = i;
                             }
                             else
-                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer); backToMenu = true; }
+                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer, randomNumber[indexOfTheLowestValue]); backToMenu = true; }
 
                             whileCondition = false;
                             break;
@@ -570,7 +584,7 @@ namespace ConsoleApp15
                                 counter = i;
                             }
                             else
-                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer); backToMenu = true; }
+                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer, randomNumber[indexOfTheLowestValue]); backToMenu = true; }
 
                             whileCondition = false;
                             break;
@@ -584,7 +598,7 @@ namespace ConsoleApp15
                                 counter = i;
                             }
                             else
-                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer); backToMenu = true; }
+                            { AnsweredIncorrectly(i, moneyPrizes, storedValues[storedRightIndex].letter + ": " + storedValues[storedRightIndex].answer, randomNumber[indexOfTheLowestValue]); backToMenu = true; }
 
                             whileCondition = false;
                             break;
@@ -592,7 +606,7 @@ namespace ConsoleApp15
                             if (fiftyBoolean)
                             {
                                 Console.WriteLine("\n\t\t\t\t\t\t   Applying 50/50...\n");
-                                Thread.Sleep(1000);
+                                Thread.Sleep(1500);
                                 //This for-loop displays the right answer plus another random one in alphabetical order
                                 for (int j = 0; j < storedValues.Length; j++)
                                 {
@@ -632,7 +646,7 @@ namespace ConsoleApp15
                             if (audienceBoolean)
                             {
                                 Console.WriteLine("\n\t\t\t\t\t\t  Asking the audience...\n");
-                                Thread.Sleep(1000);
+                                Thread.Sleep(1500);
                                 if (fiftyBoolean || (i != auxiliarNumber)) //if this is true, that means "50/50" hasn't been executed yet or that "50/50" was executed in a previous question
                                 {
                                     //4 QUESTION CASE (DIFFERENT QUESTION)
@@ -733,7 +747,7 @@ namespace ConsoleApp15
                             if (phoneBoolean)
                             {
                                 Console.WriteLine("\n\t\t\t\t\t\t  Calling a friend...");
-                                Thread.Sleep(1000);
+                                Thread.Sleep(1500);
                                 // 4 QUESTION CASE (DIFFERENT QUESTION)
                                 if (fiftyBoolean || (i != auxiliarNumber)) //if this is true, that means "50/50" hasn't been executed yet or that "50/50" was executed in a previous question
                                 {
@@ -819,12 +833,10 @@ namespace ConsoleApp15
                                             Console.ReadLine();
 
                                             //Updating the Rankings with the money earned
-
+                                            //Creating an array to store the rankings saved in the text file
                                             int[] rankingsArray = new int[30];
                                             ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
-
                                             rankingsArray[randomNumber[indexOfTheLowestValue]] = rankingsArray[randomNumber[indexOfTheLowestValue]] + moneyPrizes[i - 1];
-
                                             WritingRankingsToFile(ref rankingsArray, "Rankings.txt");
 
                                             backToMenu = true;
@@ -848,7 +860,7 @@ namespace ConsoleApp15
                             /////////////////////////
                             break;
                         case "h":
-                            //Console.WriteLine("\n\t\t\t\t     This feature is only available in the paid version");
+                            //Console.WriteLine("\n\t\t\t\t     This feature is only available in the paid version xD");
                             //Console.ReadLine();
                             Console.WriteLine("\n\t\t\t\t\t     Here is the omnipotent hint: \"" + storedValues[storedRightIndex].letter + "\"");
                             break;
@@ -886,6 +898,13 @@ namespace ConsoleApp15
                     Console.WriteLine("\n\n\t\t\t\t\t\tYou are now a Millionaire");
                     Console.Write("\n\t\t\t\t\t\t\t  ...");
                     Console.ReadLine();
+
+                    //Updating the Rankings with the money earned
+                    //Creating an array to store the rankings saved in the text file
+                    int[] rankingsArray = new int[30];
+                    ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
+                    rankingsArray[randomNumber[indexOfTheLowestValue]] = rankingsArray[randomNumber[indexOfTheLowestValue]] + moneyPrizes[i];
+                    WritingRankingsToFile(ref rankingsArray, "Rankings.txt");
                 }
 
                 //Breaking the for-loop
@@ -945,7 +964,7 @@ namespace ConsoleApp15
                 Console.Write("\n\t\t\t\t\t\tPlease enter a valid input");
             }
         }
-        public static void BubbleSort(ref ContestantDetails[] array) //This is the bubble sort algorithm to sort the names in alphabetical order
+        public static void BubbleSortNames(ref ContestantDetails[] array) //This is the bubble sort algorithm to sort the names in alphabetical order
         {
             for (int i = 0; i < array.Length - 1; i++)
             {
@@ -956,6 +975,21 @@ namespace ConsoleApp15
                         ContestantDetails swap = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = swap;
+                    }
+                }
+            }
+        }
+        public static void BubbleSortRankings(ref ContestantDetails[] array) //This is the bubble sort algorithm to sort the names in alphabetical order
+        {
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                for (int j = 0; j < array.Length - 1; j++)
+                {
+                    if (array[j].rank < array[j + 1].rank) // Arranges numbers from big to low
+                    {
+                        ContestantDetails swap = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = swap;
                     }
                 }
             }
@@ -1084,7 +1118,7 @@ namespace ConsoleApp15
                         ReadingNamesFromFile(ref arrayOfContestants, filePath);
 
                         //Sorting the names
-                        BubbleSort(ref arrayOfContestants);
+                        BubbleSortNames(ref arrayOfContestants);
 
                         Console.Write("\n\t\t\t\t\t\t\t  ...\n\n");
                         //Displaying the names
@@ -1103,28 +1137,28 @@ namespace ConsoleApp15
                         break;
                     case "3":
                         Console.Clear();
-                        Console.WriteLine("Here go the rankings");
+                        Console.WriteLine("\t\t\t\t\t\t\tRankings");
                         
-                        //This method fills the previosuly created array with the information from the given file
+                        //This method fills the previosuly created array with the names of the contestants
                         ReadingNamesFromFile(ref arrayOfContestants, filePath);
+
+
                         int[] rankingsArray = new int[30];
                         ReadingRankingsFromFile(ref rankingsArray, "Rankings.txt");
-
-                        string[] contestantsPlusRankings = new string[30];
-
-                        for (int i = 0; i < contestantsPlusRankings.Length; i++)
+                        //Filling the rank field with the numbers from the just created int array
+                        for (int i = 0; i < arrayOfContestants.Length; i++)
                         {
-
+                            arrayOfContestants[i].rank = rankingsArray[i];
                         }
                         
-                        //Sorting the names
-                        BubbleSort(ref arrayOfContestants);
+                        //Sorting contestants by ranking
+                        BubbleSortRankings(ref arrayOfContestants);
 
                         Console.Write("\n\t\t\t\t\t\t\t  ...\n\n");
                         //Displaying the names
                         for (int i = 0; i < arrayOfContestants.Length; i++)
                         {
-                            Console.WriteLine("\t\t\t\t" + arrayOfContestants[i].lastName.PadRight(25) + arrayOfContestants[i].firstName.PadRight(15) + arrayOfContestants[i].rank.ToString().PadRight(15));
+                            Console.WriteLine("\t\t\t    " + $"{i+1} - ".PadLeft(7) + arrayOfContestants[i].lastName.PadRight(25) + arrayOfContestants[i].firstName.PadRight(15) + ("$" + arrayOfContestants[i].rank.ToString()).PadLeft(12)); //.ToString().PadRight(15)
                         }
                         Console.Write("\n\t\t\t\t\t\t\t  ...");
                         Console.ReadLine();
@@ -1152,6 +1186,10 @@ namespace ConsoleApp15
         }
         static void Main()
         {
+            /*Francisco Rosas
+             * Final Assignment
+             * Program: A game based on the famous TV Show Who Wants to Be a Millionaire
+             */
             string input;
             do
             {

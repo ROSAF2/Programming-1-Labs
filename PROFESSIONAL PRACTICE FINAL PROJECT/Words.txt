@@ -1,0 +1,10 @@
+forest
+building
+downstream 
+enter 
+east 
+west 
+north 
+south
+up 
+down
