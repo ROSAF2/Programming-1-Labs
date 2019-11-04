@@ -451,7 +451,7 @@ namespace Francisco
                 Console.WriteLine($"\t\t" + ("C: " + storedValues[2].answer.PadRight(40)) + ("D: " + storedValues[3].answer.PadRight(40)));
                 Console.WriteLine("\n");
                 Console.WriteLine("   ------------------------------------------------------------------------------------------------------------------");
-                Console.WriteLine("  |   50/50   | |  Ask the Audience  | |  Phone a friend  | |  Leave the game  | |  Omnipotent Hint  | |  Main Menu  |");
+                Console.WriteLine("  |   50/50   | |  Ask the Audience  | |  Phone a friend  | |    Walk away     | |  Omnipotent Hint  | |  Main Menu  |");
                 Console.WriteLine("  |  Press 1  | |      Press 2       | |      Press 3     | |      Press L     | |      Press H      | |   Press 0   |");
                 Console.WriteLine("   ------------------------------------------------------------------------------------------------------------------");
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
